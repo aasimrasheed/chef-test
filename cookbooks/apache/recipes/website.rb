@@ -9,5 +9,11 @@ end
 
 file 'default www' do
 	path var_path
-	content 'H e l l o   W o r l d !!!!'
+	content 'H e l l o   W o r l d VERSION 2.0 !!!!'
 end
+
+var_webnodes = search('node', 'role:web')
+var_webnodes.each do |var_node|
+	puts var_node
+end
+
