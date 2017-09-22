@@ -1,5 +1,7 @@
 
-if node['platform_family'] == 'rhel'
+if node['platform'] == 'ubuntu'
+        var_path = '/var/www/html/index.html'
+elsif node['platform_family'] == 'rhel'
 	var_path = '/var/www/html/index.html'
 elsif  node['platform_family'] == 'debian'
         var_path = '/var/www/index.html'
