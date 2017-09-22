@@ -2,5 +2,5 @@
 var_hostname = node['hostname']
 
 file '/etc/motd' do
-	content "Hostname is this: #{hostname}"
+	content "Hostname is this: #{var_hostname}"
 end
